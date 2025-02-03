@@ -1,6 +1,6 @@
 # Acme Widget Co Basket System
 
-This project implements a pizza factory system for create order and selection of pizzas based on its category like vegetarian or non-vegetarian and also calculate its total amount with extra charges.
+This project implements a pizza factory system for creating orders and selecting pizzas based on their category like vegetarian or non-vegetarian and also calculates its total amount with extra charges.
 
 ## Requirements
 
@@ -32,15 +32,15 @@ bundle exec rspec
 This implementation uses a modular approach with separate classes for different concerns:
 
 - `Pizza`: Represents a pizza type, size, Available toppings and also listed on crusts and price
-- `Order`: Manages the pizza selection and category depend on selected type like(regular, medium, large)
-- `Test`: The main class that manages the order of pizzas and show total amount of successful order.
+- `Order`: Manages the pizza selection and category depending on the selected type (regular, medium, large)
+- `Test`: The main class that manages the order of pizzas and shows the total amount of successful orders.
 
-The `Test` class uses dependency injection to receive the pizza, sizes, rules,category and calculation of order with extra side items or extra cheese quantity, allowing for easy modification and testing of different scenarios.
+The `Test` class uses dependency injection to receive the pizza, sizes, rules, category, and order calculation with extra side items or extra cheese quantity, allowing for easy modification and testing of different scenarios.
 
 ## Assumptions
 
-- Pizza name, size, price and toppings(vegetarian, non-vegetarian) are unique
-- Order selected pizza and side items with extra cheese charges are calculated based on the total after checking with its type.
+- Pizza name, size, price, and toppings(vegetarian, non-vegetarian) are unique
+- Order selected pizza and side items with extra cheese charges, which are calculated based on the total after checking with its type.
 
 ## Future Improvements
 
