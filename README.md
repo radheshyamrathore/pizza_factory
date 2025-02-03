@@ -1,4 +1,4 @@
-# Acme Widget Co Basket System
+# Pizza Factory System
 
 This project implements a pizza factory system for creating orders and selecting pizzas based on their category like vegetarian or non-vegetarian and also calculates its total amount with extra charges.
 
