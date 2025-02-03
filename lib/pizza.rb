@@ -9,4 +9,24 @@ class Pizza
     "Chicken Tikka" => { regular: 210, medium: 370, large: 500 },
     "Pepper Barbecue Chicken" => { regular: 220, medium: 380, large: 525 }
   }
+
+  CRUST_TYPES = ["New hand tossed", "Wheat thin crust", "Cheese Burst", "Fresh pan pizza"]
+
+  VEG_TOPPINGS = {
+    "Black olive" => 20,
+    "Capsicum" => 25,
+    "Paneer" => 35,
+    "Mushroom" => 30,
+    "Fresh tomato" => 10
+  }
+
+  NON_VEG_TOPPINGS = {
+    "Chicken tikka" => 35,
+    "Barbeque chicken" => 45,
+    "Grilled chicken" => 40
+  }
+
+  EXTRA_CHEESE_PRICE = 35
+
+  
 end
