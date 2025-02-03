@@ -1,4 +1,3 @@
-require 'byebug'
 class Order
   attr_accessor :pizzas, :sides
 
