@@ -1,5 +1,4 @@
-require 'byebug'
-# test_script.rb
+# test.rb
 require_relative 'lib/pizza'
 require_relative 'lib/order'
 
@@ -52,7 +51,6 @@ loop do
   # Add Toppings
   puts "Would you like to add toppings? (yes/no): "
   if gets.chomp.downcase == 'yes'
-    byebug
     available_toppings = ["Deluxe Veggie", "Cheese and Corn", "Paneer Tikka"].include?(pizza_name) ? VEG_TOPPINGS : NON_VEG_TOPPINGS
 
     puts "Available toppings:"
