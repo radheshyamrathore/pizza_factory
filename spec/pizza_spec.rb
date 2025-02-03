@@ -70,18 +70,5 @@ RSpec.describe Pizza do
       veg_pizza.add_topping("Mushroom")
       expect(veg_pizza.total_price).to eq(255) # Base price (200) + Capsicum (25) + Mushroom (30)
     end
-
-    # it "does not charge for up to 2 toppings on large pizzas" do
-    #   non_veg_pizza.add_topping("Capsicum")
-    #   non_veg_pizza.add_topping("Mushroom")
-    #   expect(non_veg_pizza.total_price).to eq(370) # No extra charge for first 2 toppings
-    # end
-
-    # it "charges for extra toppings beyond 2 on large pizzas" do
-    #   non_veg_pizza.add_topping("Capsicum")
-    #   non_veg_pizza.add_topping("Mushroom")
-    #   expect(non_veg_pizza.add_topping("Fresh tomato")).to eq("Cannot add more than 2 toppings for Large size.")
-    #   expect(non_veg_pizza.total_price).to eq(370)
-    # end
   end
 end
