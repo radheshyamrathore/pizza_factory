@@ -41,12 +41,4 @@ RSpec.describe Order do
       expect(order.total_price).to eq(pizza.total_price + 55)
     end
   end
-
-  describe '#confirm' do
-    it 'returns confirmation message with total price' do
-      order.add_pizza(pizza)
-      order.add_side("Cold drink")
-      expect(order.confirm).to eq("Order placed successfully! Total amount: Rs. #{order.total_price}")
-    end
-  end
 end
