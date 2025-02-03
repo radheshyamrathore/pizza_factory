@@ -26,8 +26,4 @@ class Order
     side_cost = @sides.map { |s| SIDE_ITEMS[s] }.sum
     pizza_cost + side_cost
   end
-
-  def confirm
-    "Order placed successfully! Total amount: Rs. #{total_price}"
-  end
 end
