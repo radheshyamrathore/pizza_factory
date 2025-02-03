@@ -9,6 +9,10 @@ This project implements a pizza factory system for creating orders and selecting
 ## Setup
 
 1. Clone the repository
+```
+https://github.com/radheshyamrathore/pizza_factory.git
+```
+
 2. Run `bundle install` to install dependencies
 
 ## Adding data to Order
