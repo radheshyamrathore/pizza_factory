@@ -28,5 +28,22 @@ class Pizza
 
   EXTRA_CHEESE_PRICE = 35
 
-  
+  def initialize(name, size, crust)
+    @name = name
+    @size = size.to_sym
+    @crust = crust
+    @toppings = []
+    @extra_cheese = false
+    @base_price = SIZE_PRICES[name][@size]
+    validate_crust
+  end
+
+  private
+
+  def validate_crust
+    unless CRUST_TYPES.include?(@crust)
+      raise "Invalid crust type selected!"
+    end
+  end
 end
+  
