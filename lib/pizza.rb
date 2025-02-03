@@ -1,4 +1,3 @@
-require 'byebug'
 class Pizza
   attr_accessor :name, :size, :crust, :toppings, :extra_cheese, :base_price
 
@@ -53,6 +52,17 @@ class Pizza
 
   def add_extra_cheese
     @extra_cheese = true
+  end
+
+  def total_price
+    extra_toppings_cost = if @size == :large && @toppings.size <= 2
+                            0
+                          else
+                            @toppings.map { |t| topping_price(t) }.sum
+                          end
+    cheese_cost = @extra_cheese ? EXTRA_CHEESE_PRICE : 0
+
+    @base_price + extra_toppings_cost + cheese_cost
   end
 
   private
